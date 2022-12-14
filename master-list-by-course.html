@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashier Head Dashboard - Iloilo Doctor's College</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <button type="button" class="button-accent-medium circle" id="sidebar-toggler">
+                    <span class="material-symbols-rounded">menu</span>
+                </button>
+                <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
+                    <img class="brand-logo" src="assets/logo/edsci-logo.png" alt="">
+                    <div class="font-size-16 font-weight-600">Escuela de Sophia of Caloocan, Inc.</div>
+                </a>
+                <ul class="navmenu">
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark">
+                            <span class="material-symbols-rounded font-size-20">flag</span>
+                            First Quarter
+                        </a>
+                    </li>
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <span class="material-symbols-rounded font-size-20">today</span>
+                            SY: 2022 - 2023
+                        </a>
+                    </li>
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark">
+                            <span class="material-symbols-rounded font-size-20">notifications</span>
+                            Notification
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a role="button" class="d-flex align-items-center gap-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="initial-circle-xs background-color-primary">R</div>
+                            <div class="font-size-14 font-weight-600 nav-username">Cashier, Head Account</div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">account_circle</span> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">star</span>News & Events</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">settings</span>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">contact_support</span>Submit Ticket</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#changeDepartment"><span class="material-symbols-rounded">admin_panel_settings</span>Change Department</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">description</span>User Manual</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">logout</span>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside id="aside">
+            <ul class="side-menu">
+                <li class="side-item">
+                    <div class="d-flex align-items-center background-accent-primary rounded-4 gap-3 py-2 px-3">
+                        <div class="initial-circle-sm rounded-4 background-accent-primary">
+                            <span class="material-symbols-rounded">person</span>
+                        </div>
+                        <div class="me-auto">
+                            <div class="font-size-14 font-weight-600">Cashier Head</div>
+                            <div class="font-size-12">User Account</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="side-item-header">Menu</li>
+                <li class="side-item">
+                    <a class="side-link active" href="index.html">
+                        <span class="material-symbols-rounded">dashboard</span>
+                        <span class="side-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="side-item" data-badge="9+">
+                    <a class="side-link" href="messages.html" target="_blank" rel="noopener">
+                        <span class="material-symbols-rounded">mail</span>
+                        <span class="side-text">Messages</span>
+                    </a>
+                </li>
+                <li class="side-item-header">Sections</li>
+                <li class="side-item">
+                    <a class="side-link active" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">wb_incandescent</span>
+                            <span class="side-text">Student</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="search-student.html" class="collapse-item">Search Student</a>
+                        <a href="officially-enrolled.html" class="collapse-item">Officially Enrolled</a>
+                        <a href="registrar-verified.html" class="collapse-item">Registrar Verified</a>
+                        <a href="unpaid-accounts.html" class="collapse-item">Unpaid Accounts</a>
+                        <a href="fully-paid-students.html" class="collapse-item">Fully Paid Students</a>
+                        <a href="partial-paid-students.html" class="collapse-item">Partial Paid Students</a>
+                        <a href="master-list-by-course.html" class="collapse-item active">Masterlist By Course</a>
+                        <a href="applicants.html" class="collapse-item">Applicants</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">category</span>
+                            <span class="side-text">Finance Settings</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="statement-account-settings.html" class="collapse-item">Statement of Account Settings</a>
+                        <a href="#" class="collapse-item">Fee Creator</a>
+                        <a href="#" class="collapse-item">Program Fee Management</a>
+                        <a href="#" class="collapse-item">Bank Creator</a>
+                        <a href="#" class="collapse-item">O.R. Number Settings</a>
+                        <a href="#" class="collapse-item">Payment Plan</a>
+                        <a href="#" class="collapse-item">Scholarship Creator</a>
+                        <a href="#" class="collapse-item">Recompute Student Fees</a>
+                        <a href="#" class="collapse-item">Subject Added Fees</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">download</span>
+                            <span class="side-text">Excel</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="#" class="collapse-item">Student Scholarship Reports</a>
+                        <a href="#" class="collapse-item">Cashier Transaction</a>
+                        <a href="#" class="collapse-item">Monthly Payment Report</a>
+                        <a href="#" class="collapse-item">Exam Permit Report</a>
+                        <a href="#" class="collapse-item">List of Students with Promisory Note</a>
+                        <a href="#" class="collapse-item">Voided Payment Report</a>
+                        <a href="#" class="collapse-item">Bookstore Abstract Report</a>
+                        <a href="#" class="collapse-item">Student Charges</a>
+                        <a href="#" class="collapse-item">Download Student Charges Excel</a>
+                        <a href="#" class="collapse-item">Student Payments</a>
+                        <a href="#" class="collapse-item">Download Student Payments Excel</a>
+                        <a href="#" class="collapse-item">Student Deductions</a>
+                        <a href="#" class="collapse-item">Download Student Deductions</a>
+                        <a href="#" class="collapse-item">Remaining Balance Report</a>
+                        <a href="#" class="collapse-item">Download Remaining Balance Report</a>
+                        <a href="#" class="collapse-item">Generate Exam Permit</a>
+                        <a href="#" class="collapse-item">Abstract Collection Report</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">school</span>
+                            <span class="side-text">Non Student</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="#" class="collapse-item">Add Payment</a>
+                        <a href="#" class="collapse-item">Non Student Cashier Transaction</a>
+                        <a href="#" class="collapse-item">Abstract Collection Report</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">receipt_long</span>
+                            <span class="side-text">Reports</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="#" class="collapse-item">SOA Batch Print</a>
+                    </div>
+                </li>
+                <li class="side-item-header">Settings</li>
+                <li class="side-item">
+                    <a class="side-link" href="#">
+                        <span class="material-symbols-rounded">receipt</span>
+                        <span class="side-text">Sponsor Master List</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="#">
+                        <span class="material-symbols-rounded">description</span>
+                        <span class="side-text">Permit</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="profile.html">
+                        <span class="material-symbols-rounded">person</span>
+                        <span class="side-text">Profile</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="change-password.html">
+                        <span class="material-symbols-rounded">password</span>
+                        <span class="side-text">Change Password</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="change-school-year.html">
+                        <span class="material-symbols-rounded">change_circle</span>
+                        <span class="side-text">Change School Year</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="container">
+                <div class="bread">
+                    <ol class="bread-menu">
+                        <li class="bread-item">
+                            <a href="#" class="bread-link">Dashboard</a>
+                        </li>
+                        <li class="bread-item">
+                            <a href="#" class="bread-link" aria-current="page">Reports and Records</a>
+                        </li>
+                        <li class="bread-item">
+                            <span class="bread-link" aria-current="page">Master List by Course</span>
+                        </li>
+                    </ol>
+                    <h4>Master List by Course</h4>
+                </div>
+
+                <div class="row g-4 mt-4">
+                    <div class="col-xl-12">
+                        <div class="background-color-card py-3 px-3 rounded-3 shadow-sm sticky-top">
+                            <div class="font-size-18 font-weight-600 mb-3">Filter Data</div>
+                            <form action="">
+                                <div class="row align-items-center justify-content-between g-3">
+                                    <div class="col-xl-4">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option disabled selected>-- All Programs --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option disabled selected>-- All Major --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option disabled selected>-- All Level --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2">
+                                        <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Filter</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="d-flex align-items-center justify-content-between background-color-card py-3 px-3 mb-3 rounded-3 shadow-sm sticky-top">
+                            <div class="font-size-18 font-weight-600">College Department</div>
+                            <div class="badge background-color-success round">Total: 0</div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered background-color-card">
+                                <thead>
+                                    <tr>
+                                        <th>Student No.</th>
+                                        <th>Student Name</th>
+                                        <th>Level</th>
+                                        <th>Course</th>
+                                        <th>Previous School</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center" colspan="5">No data available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+        </div>
+    </div>
+
+    <button type="button" class="button-secondary circle md shadow-sm position-fixed bottom-0 right-0 my-5 mx-5 theme-btn-switcher">
+        <span class="material-symbols-rounded theme-icon-switcher">light_mode</span>
+    </button>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
