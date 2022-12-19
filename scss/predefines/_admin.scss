@@ -186,6 +186,15 @@ $default-transition: all 0.2s ease !default;
                 .side-link.active {
                     @extend %defaultActiveState;
                 }
+
+                .side-link {
+                    &:focus {
+                        .material-symbols-rounded.expand {
+                            transform: rotateZ(-180deg);
+                            transition: all 0.2s ease;
+                        }
+                    }
+                }
                 
                 .side-link {
                     position: relative;
