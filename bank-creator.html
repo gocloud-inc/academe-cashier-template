@@ -126,9 +126,9 @@
                     
                     <div class="side-menu-collapse">
                         <a href="statement-account-settings.html" class="collapse-item">Statement of Account Settings</a>
-                        <a href="fee-creator.html" class="collapse-item active">Fee Creator</a>
+                        <a href="fee-creator.html" class="collapse-item">Fee Creator</a>
                         <a href="program-fee-management.html" class="collapse-item">Program Fee Management</a>
-                        <a href="#" class="collapse-item">Bank Creator</a>
+                        <a href="bank-creator.html" class="collapse-item active">Bank Creator</a>
                         <a href="#" class="collapse-item">O.R. Number Settings</a>
                         <a href="#" class="collapse-item">Payment Plan</a>
                         <a href="#" class="collapse-item">Scholarship Creator</a>
@@ -238,10 +238,10 @@
                             <a href="#" class="bread-link" aria-current="page">Reports and Records</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Statement Account Settings Setup</span>
+                            <span class="bread-link" aria-current="page">Fees Bank</span>
                         </li>
                     </ol>
-                    <h4>Statement Account Settings Setup</h4>
+                    <h4>Fees Bank</h4>
                 </div>
 
                 <div class="row g-4 mt-4">
@@ -250,16 +250,23 @@
                             <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
                                 <div class="font-size-18 font-weight-600 mb-3">Filter Data</div>
                                 <div class="row g-3">
-                                    <div class="col-xl-8">  
+                                    <div class="col-xl-4">  
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name">
+                                            <select class="form-control">
+                                                <option value="">Code</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">  
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Keyword">
                                         </div>
                                     </div>
                                     <div class="col-xl-2">
                                         <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
                                     </div>
                                     <div class="col-xl-2">
-                                        <button type="submit" class="button-dark block"><span class="material-symbols-rounded">add</span> New Fee</button>
+                                        <button type="submit" class="button-dark block"><span class="material-symbols-rounded">add</span> Create New Record</button>
                                     </div>
                                 </div>
                             </div>
@@ -270,14 +277,20 @@
                             <table class="table table-bordered background-color-card">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Default Value</th>
+                                        <th>Code</th>
+                                        <th>Description</th>
+                                        <th>Category</th>
+                                        <th>S.Y.</th>
+                                        <th>Semester</th>
+                                        <th>Year</th>
+                                        <th>Course</th>
+                                        <th>Major</th>
                                         <th class="text-center" width="8%">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center" colspan="3">No data available</td>
+                                        <td class="text-center" colspan="9">No data available</td>
                                     </tr>
                                 </tbody>
                             </table>
